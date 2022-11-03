@@ -9,3 +9,5 @@ This follows on from the discussions about encoded media APIs at TPAC.
 It's likely to be possible to get those demos somewhat functional by shimming "new" APIs on top of the older APIs - not to achieve the full functionality, but to get a "feel" for how it's possible to write the kind of apps that we may want. 
 
 Read the API.md file to get an idea of one possible shape of the API we're trying to play with.
+
+To read HTML files in the repo, clone the repo, do ```npm install``` and ```npm start```, and then navigate to http://localhost:8080/
