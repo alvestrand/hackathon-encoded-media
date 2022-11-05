@@ -6,7 +6,9 @@ console.log('Button is', bumpInStackButton);
 bumpInStackButton.onclick = createBumpInStack;
 
 function createBumpInStack() {
-  const pc = new RTCPeerConnection();
+  const pc = new RTCPeerConnection({
+    encodedInsertableStreams: true, // TODO: Hide this somehow.
+  });
   pc.addTransceiver('audio');
   const sender = pc.getSenders()[0];
   const frameSource = sender.divertFrames();
