@@ -2,9 +2,12 @@
   "name": "hackathon-encoded-media",
   "version": "0.0.1",
   "scripts": {
+    "eslint": "eslint 'lib/**.js' 'samples/**.js'",
     "start": "http-server . -c-1"
   },
   "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-google": "^0.14.0",
     "http-server": "^14.1.0"
   }
 }

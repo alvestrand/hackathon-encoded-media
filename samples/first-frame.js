@@ -2,7 +2,7 @@
 // functions can be called.
 
 const bumpInStackButton = document.querySelector('button#bumpInStack');
-console.log("Button is", bumpInStackButton);
+console.log('Button is', bumpInStackButton);
 bumpInStackButton.onclick = createBumpInStack;
 
 function createBumpInStack() {
