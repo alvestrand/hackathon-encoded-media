@@ -18,16 +18,21 @@ constructor(integer width, integer height);
 createFrame();
 };
 
-partial interface RtpSender {
+partial interface RTCRtpSender {
    EncodedFrameSource DivertFrames();
-   void InsertFrames(EncodedFrameSource);
+   void insertFrames(EncodedFrameSource);
+};
+
+partial interface RTCRtpReceiver {
+   EncodedFrameSource DivertFrames();
+   void insertFrames(EncodedFrameSource);
 };
 
 interface EncodedFrameSource {
    ReadableStream source;
-   void RequestKeyFrame();
-   void RequestBandwidth(BandwidthEvent);
-   void RequestResolution(ResolutionEvent);
+   void requestKeyframe();
+   void requestBandwidth(BandwidthEvent);
+   void requestResolution(ResolutionEvent);
 }
 
 interface EncodedFrameSink {
