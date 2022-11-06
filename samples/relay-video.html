@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Encoded media experiment page</title>
+  <script src="../lib/encoded_api.js"></script>
+  <script src="../lib/helpers.js"></script>
+  </head>
+  <body>
+    <h1>Relay video from incoming to outgoing track</h1>
+    This experiment shows taking an incoming track from a PeerConnection
+    and passing the encoded frames out over another PeerConnection.
+    <p>
+      NOT CURRENTLY EXPECTED TO WORK.
+    <p>
+      <button id="passVideo">Pass video</button>
+      <button id="stopPassingVideo">Stop</button>
+      <div>
+      <video width="33%" id="sourceVideo" autoplay />
+      <video width="33%" id="intermediateVideo" />
+      <video width="33%" id="destinationVideo" />
+      </div>
+    <script src="relay-video.js"></script>
+  </body>
+  
+</html>
