@@ -42,3 +42,4 @@ interface EncodedFrameSink {
    attribute onrequestresolution;
 }
 ```
+Note: Examples so far haven't shown the need to define EncodedFrameSink. We can couple transforms together by making subsequent transforms take an EncodedFrameSource as a constructor argument instead of defining a "plug together" operation between an EncodedFrameSource and an EncodedFrameSink as originally envisioned.
